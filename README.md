@@ -1,20 +1,27 @@
 # Project 3: Spots
 
 ### Overview  
-
-* Intro  
-* Figma  
+* Project description
+* Techniques & Technology
+* Future Improvement Plan  
 * Deployment
   
-**Intro**
+**Description**
   
-This project is made to test the skills of beginner HTML/CSS developer. A repsponsive design compare to many previous projects. A display gallery of elements full of challenging and frustrating obstacles to tackle.
+Spots is a website in which you can share images of the _spots_ you've been to while traveling or at your hometown, this app was created using HTML and CSS with plans to add extra functionality in the future.
+
+**Techniques & Technology**
+
+* HTML
+* CSS
+* Responsive design
   
-**Figma**  
+**Future Improvement Plan**  
   
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+Future update for Spots include Actual Functionality, improved UI, privacy settings, ability to remove cards.
   
 **Deployment**  
   
-This webpage is deployed to Github pages
+This webpage is deployed to Github page
+
 
