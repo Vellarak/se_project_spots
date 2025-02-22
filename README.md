@@ -23,5 +23,5 @@ Future update for Spots include Actual Functionality, improved UI, privacy setti
 **Deployment**  
   
 This webpage is deployed to Github page
-
+* Link https://Vellarak.github.io/se_project_spots
 
