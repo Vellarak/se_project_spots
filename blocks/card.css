@@ -53,4 +53,9 @@
     max-width: 250px;
     font-size: 16px;
   }
+
+  .card__like-btn{
+    width: 20px;
+    height: 18px;
+  }
 }

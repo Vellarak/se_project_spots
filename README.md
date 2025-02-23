@@ -4,7 +4,8 @@
 * Project description
 * Techniques & Technology
 * Future Improvement Plan  
-* Deployment
+* Deployment Webpage
+* Video Demonstration
   
 **Description**
   
@@ -24,4 +25,7 @@ Future update for Spots include Actual Functionality, improved UI, privacy setti
   
 This webpage is deployed to Github page
 * Link https://Vellarak.github.io/se_project_spots
+
+**Video Demonstration**
+* Video link https://drive.google.com/file/d/1ZgD-Gr812UYVeI8NBumBpZdX4RGteU7m/view?usp=drive_link
 
