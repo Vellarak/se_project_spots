@@ -13,7 +13,7 @@
   visibility: hidden;
 }
 
-.modal__opened{
+.modal_opened{
   visibility: visible;
 }
 
@@ -63,7 +63,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 630px;
   font-weight: 500;
   font-size: 16px;
   line-height: 17.6px;
@@ -134,7 +133,6 @@
     font-size: 16px;
     line-height: 16px;
     opacity: 30%;
-    width: 100%;
   }
 
   .modal__btn-submit{
