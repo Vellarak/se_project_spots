@@ -1,4 +1,4 @@
-const initialCArds = [
+const initialCards = [
   { name: "Mountain house",link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg"},
   { name: "A tunnel with morning light", link:"https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/5-photo-by-van-anh-nguyen-from-pexels.jpg"},
   { name: "A very long bridge, over the forest and through the trees", link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/4-photo-by-maurice-laschet-from-pexels.jpg"},
@@ -22,7 +22,6 @@ const initialCArds = [
  const cardsImage = document.querySelector(".card__image");
 
  function getCardElement(data){
-  console.log(data);
   const cardElement = cardTemplate.content
   .querySelector(".card")
   .cloneNode(true);
@@ -56,8 +55,8 @@ const initialCArds = [
  editClosebutton.addEventListener("click", closeModal);
  editFormElememt.addEventListener("submit", handleEditFormSubmit);
 
-for (let i = 0; i <initialCArds.length; i++){
-  const cardElement = getCardElement(initialCArds[i]);
+for (let i = 0; i <initialCards.length; i++){
+  const cardElement = getCardElement(initialCards[i]);
   cardsList.prepend(cardElement)
 }
 
