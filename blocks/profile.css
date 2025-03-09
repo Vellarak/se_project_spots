@@ -1,23 +1,23 @@
-.profile{
+.profile {
   display: flex;
   margin: 0 auto;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 
-.profile__avatar{
+.profile__avatar {
   margin-right: 20px;
   border-radius: 8px;
   height: 190px;
   width: 190px;
 }
 
-.profile__column{
+.profile__column {
   display: flex;
   flex-direction: column;
 }
 
-.profile__name{
+.profile__name {
   margin: 0 0 12px;
   color: #212121;
   font-weight: 500;
@@ -32,9 +32,9 @@
   max-width: 420px;
 }
 
-.profile__description{
+.profile__description {
   margin: 0;
-  color:#212121;
+  color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -47,27 +47,27 @@
   -webkit-box-orient: vertical;
   max-width: 420px;
 }
-.profile__edit-btn{
+.profile__edit-btn {
   display: flex;
   gap: 8px;
   margin-top: auto;
   border: none;
-  background-color:#FCF5E5 ;
+  background-color: #fcf5e5;
   opacity: 70%;
   font-weight: 500;
   color: #212121;
 }
 
-.profile__edit-btn:hover{
+.profile__edit-btn:hover {
   opacity: 100%;
   cursor: pointer;
 }
 
-.profile__add-btn{
+.profile__add-btn {
   margin-left: auto;
-  color: #FCF5E5;
+  color: #fcf5e5;
   background-color: #212121;
-  width:149px;
+  width: 149px;
   height: 52px;
   border-radius: 8px;
   margin-top: auto;
@@ -75,19 +75,19 @@
   font-weight: 500;
   border: none;
   display: flex;
-    gap: 8px;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-around;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
-.profile__add-btn:hover{
-  cursor:pointer;
+.profile__add-btn:hover {
+  cursor: pointer;
   opacity: 80%;
 }
 
-@media screen and (max-width:627px) {
-  .profile{
+@media screen and (max-width: 627px) {
+  .profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -95,29 +95,29 @@
     max-width: 288px;
   }
 
-  .profile__avatar{
+  .profile__avatar {
     margin: 0 0 12px;
     height: 80px;
     width: 80px;
   }
 
-  .profile__name{
+  .profile__name {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 6px;
     max-width: 288px;
   }
 
-  .profile__description{
+  .profile__description {
     margin-bottom: 32px;
     max-width: 288px;
   }
 
-  .profile__edit-btn{
+  .profile__edit-btn {
     justify-content: center;
     margin-bottom: 20px;
   }
-  .profile__add-btn{
+  .profile__add-btn {
     margin: 0;
     width: 100%;
   }

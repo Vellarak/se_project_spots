@@ -1,8 +1,8 @@
-.card{
+.card {
   max-width: 413px;
 }
 
-.card__title{
+.card__title {
   margin: 0;
   font-weight: 500;
   font-size: 20px;
@@ -22,12 +22,12 @@
   border-radius: 8px;
 }
 
-.card__content{
+.card__content {
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
 }
-.card__like-btn{
+.card__like-btn {
   background-image: url(../images/Union.svg);
   width: 23px;
   height: 20px;
@@ -40,21 +40,21 @@
   background-repeat: no-repeat;
 }
 
-.card__like-btn:hover{
+.card__like-btn:hover {
   opacity: 100%;
 }
 
-@media screen and (max-width:627px) {
-  .card__image{
+@media screen and (max-width: 627px) {
+  .card__image {
     height: 288px;
   }
 
-  .card__title{
+  .card__title {
     max-width: 250px;
     font-size: 16px;
   }
 
-  .card__like-btn{
+  .card__like-btn {
     width: 20px;
     height: 18px;
   }

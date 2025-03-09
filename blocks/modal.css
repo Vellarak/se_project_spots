@@ -1,10 +1,10 @@
-.modal{
+.modal {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -13,11 +13,11 @@
   visibility: hidden;
 }
 
-.modal_opened{
+.modal_opened {
   visibility: visible;
 }
 
-.modal__container{
+.modal__container {
   background-color: #fff;
   max-width: 730px;
   padding: 32px 50px;
@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.modal__btn-close{
+.modal__btn-close {
   position: absolute;
   top: 32px;
   right: 50px;
@@ -36,22 +36,22 @@
   padding: 0;
   margin: 0;
   border: none;
-  background-color:transparent;
+  background-color: transparent;
   opacity: 40%;
 }
 
-.modal__btn-close:hover{
+.modal__btn-close:hover {
   cursor: pointer;
   opacity: 100%;
 }
 
-.modal__form{
+.modal__form {
   display: flex;
   gap: 32px;
   flex-direction: column;
 }
 
-.modal__title{
+.modal__title {
   margin: 0 0 32px;
   font-weight: 500;
   font-size: 32px;
@@ -59,7 +59,7 @@
   color: #212121;
 }
 
-.modal__label{
+.modal__label {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -70,7 +70,7 @@
   color: #212121;
 }
 
-.modal__input{
+.modal__input {
   border-radius: 8px;
   opacity: 40%;
   font-weight: 500;
@@ -79,63 +79,63 @@
   padding: 16px 12px;
 }
 
-.modal__input:hover{
+.modal__input:hover {
   opacity: 100%;
 }
 
-.modal__btn-submit{
+.modal__btn-submit {
   width: 156px;
   height: 52px;
   padding: 18px 0;
   border: none;
   background-color: #212121;
-  color: #FCF5E5;
+  color: #fcf5e5;
   border-radius: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
 
-.modal__btn-submit:hover{
+.modal__btn-submit:hover {
   cursor: pointer;
   opacity: 80%;
 }
 
-@media screen and (max-width:627px){
-  .modal{
+@media screen and (max-width: 627px) {
+  .modal {
     padding: 0 10px;
   }
 
-  .modal__container{
+  .modal__container {
     padding: 12px;
   }
 
-  .modal__form{
-    gap:24px;
+  .modal__form {
+    gap: 24px;
   }
 
-  .modal__title{
+  .modal__title {
     font-size: 20px;
     line-height: 20px;
-    margin:10px 0 34px;
+    margin: 10px 0 34px;
   }
 
-  .modal__btn-close{
+  .modal__btn-close {
     top: 12px;
     right: 12px;
   }
 
-  .modal__label{
+  .modal__label {
     gap: 24px;
   }
 
-  .modal__input{
+  .modal__input {
     font-size: 16px;
     line-height: 16px;
     opacity: 30%;
   }
 
-  .modal__btn-submit{
+  .modal__btn-submit {
     width: 100%;
   }
 }
