@@ -62,6 +62,11 @@ function getCardElement(data) {
   cardImageEl.src = data.link;
   cardImageEl.alt = data.name;
 
+  const likeButton = cardElement.querySelector(".card__like-btn");
+  likeButton.addEventListener ("click", () => {
+    likeButton.classList.add("card__like-btn_liked")
+  });
+
   return cardElement;
 }
 
@@ -75,9 +80,6 @@ function closeModal(modal) {
 
 function handleCardSubmit(evt) {
   evt.preventDefault();
-  cardModalSubmitButton.addEventListener("click",() => {
-    closeModal(cardModal);
-  });
   const inputValues = { name:cardNameInput.value, link:cardLinkInput.value};
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
