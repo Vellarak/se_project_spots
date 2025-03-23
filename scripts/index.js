@@ -51,6 +51,7 @@ const cardLinkInput = cardModal.querySelector("#add-link-input");
 const modalPreview = document.querySelector("#modal-preview");
 const modalButtonClosePreview = modalPreview.querySelector(".modal__btn-close_preview");
 const modalImage = modalPreview.querySelector(".modal__image");
+const modalCaption =modalPreview.querySelector(".modal__caption");
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -79,6 +80,7 @@ function getCardElement(data) {
   cardImageEl.addEventListener("click", () => {
     modalImage.src = data.link;
     modalImage.alt = data.name;
+    modalCaption.textContent = data.name;
     openModal(modalPreview);
   });
 
