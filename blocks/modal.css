@@ -27,6 +27,22 @@
   width: 100%;
 }
 
+.modal__container_type_preview{
+  padding: 0;
+}
+
+.modal__image{
+  object-fit: contain;
+
+}
+
+.modal__btn-close_preview{
+  background-image: url(../images/Close-lite.svg);
+  cursor: pointer;
+  top: 0;
+  right:-12px;
+}
+
 .modal__btn-close {
   position: absolute;
   top: 32px;
