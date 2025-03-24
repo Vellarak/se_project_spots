@@ -41,8 +41,8 @@
 
 .modal__image{
   object-fit: contain;
-  max-width: 80vw;
-  max-height: 90vh;
+  max-width: 90vw;
+  max-height: 80vh;
   border-radius: 8px;
 }
 
