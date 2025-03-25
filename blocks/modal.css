@@ -150,6 +150,10 @@
     padding: 12px;
   }
 
+  .modal__container_type_preview{
+    padding:0;
+    max-width: 90vw;
+  }
   .modal__form {
     gap: 24px;
   }
@@ -180,7 +184,8 @@
   }
 
   .modal__btn-close_preview{
-    top: -30px;
+    top: -40px;
+    right: -10px;
   }
 
   .modal__image{
