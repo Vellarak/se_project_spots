@@ -119,9 +119,21 @@
   padding: 16px 12px;
 }
 
+.modal__input_type_error{
+  border: 1px solid rgba(255,0,0,0.6);
+}
+
 .modal__input:hover {
   opacity: 100%;
 }
+
+.modal__error{
+  color: #FF0000B2;
+  opacity: 100%;
+  visibility: visible;
+}
+
+
 
 .modal__btn-submit {
   width: 156px;
@@ -139,6 +151,10 @@
 .modal__btn-submit:hover {
   cursor: pointer;
   opacity: 80%;
+}
+
+.modal__btn-submit_type_error{
+  opacity: 10%;
 }
 
 @media screen and (max-width: 627px) {
