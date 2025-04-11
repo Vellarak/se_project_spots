@@ -52,6 +52,7 @@
       <footer class="footer">
         <p class="footer__copyright">2023 &copy; Spots</p>
       </footer>
+
       <div class="modal" id="edit-modal">
         <div class="modal__container">
           <button type="button" class="modal__btn-close">
@@ -72,8 +73,9 @@
                 placeholder="Type your name"
                 minlength="2"
                 maxlength="40"
+                required
               />
-              <span id ="name-input-error" class="modal__error">Please fill out this field</span>
+              <span id ="name-input-error" class="modal__error"></span>
             </label>
             <label for="description-input" class="modal__label">
               Description
@@ -84,8 +86,9 @@
                 placeholder="Describe yourself"
                 minlength="2"
                 maxlength="200"
+                required
               />
-              <span id ="description-input-error" class="modal__error">Please fill out this field</span>
+              <span id ="description-input-error" class="modal__error"></span>
             </label>
             <button type="submit" class="modal__btn-submit">Save</button>
           </form>
