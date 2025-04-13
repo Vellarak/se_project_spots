@@ -25,10 +25,6 @@ const initialCards = [
   },
 ];
 
-//modal parent
-const modal = document.querySelector(".modal");
-const modalParent = modal.parentElement;
-
 // profile element
 const editProfileButton = document.querySelector(".profile__edit-btn");
 const profileName = document.querySelector(".profile__name");
@@ -36,7 +32,7 @@ const profileDescription = document.querySelector(".profile__description");
 
 //form element
 const editProfileModal = document.querySelector("#edit-modal");
-const editFormElememt = editProfileModal.querySelector(".modal__form");
+const editFormElement = document.querySelector(".modal__form");
 const editClosebutton = editProfileModal.querySelector(".modal__btn-close");
 const editSubmitbutton = editProfileModal.querySelector(".modal__btn-submit");
 const editNameInput = editProfileModal.querySelector("#name-input");
@@ -106,9 +102,11 @@ modalButtonClosePreview.addEventListener("click", () => {
 //function open-close modal
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener('keydown',handleEcape);
 }
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener('keydown',handleEcape);
 }
 
 
@@ -133,7 +131,7 @@ editProfileButton.addEventListener("click", () => {
   openModal(editProfileModal);
   editNameInput.value = profileName.textContent;
   editDescriptionInput.value = profileDescription.textContent;
-  resetValidation(editFormElememt,[editNameInput,editDescriptionInput]);
+  resetValidation(editFormElement,[editNameInput,editDescriptionInput],settings);
 });
 
 editClosebutton.addEventListener("click", () =>{
@@ -149,20 +147,20 @@ cardModalCloseButton.addEventListener("click", () => {
 });
 
 // Handler,form submit
-editFormElememt.addEventListener("submit", handleEditFormSubmit);
+editFormElement.addEventListener("submit", handleEditFormSubmit);
 cardForm.addEventListener("submit", handleCardSubmit);
 
 //Escape Handler
-document.addEventListener('keydown',function(event){
-  if (event.key === 'Escape'){
-    closeModal(cardModal);
+function handleEcape(evt) {
+  if (evt.key === 'Escape'){
+    const openedPopup = document.querySelectorAll('.modal').forEach((modal)=>{
+      if (modal.classList.contains('modal_opened')){
+        closeModal(modal);
+      }
+    });
   }
-});
-document.addEventListener('keydown',function(event){
-  if (event.key === 'Escape'){
-    closeModal(editProfileModal);
-  }
-});
+}
+
 // overlay handler
 const modalList = document.querySelectorAll(".modal");
 modalList.forEach((eachModal)=> {

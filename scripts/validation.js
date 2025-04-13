@@ -44,15 +44,16 @@ const disabledButton = (buttonElement, config) =>{
   buttonElement.classList.add(config.inactiveButtonClass);
 };
 
-const resetValidation = (formElement,inputList) => {
+const resetValidation = (formElement,inputList,config) => {
   inputList.forEach((input) =>{
-    hideInputError(formElement,input,settings);
+    hideInputError(formElement,input,config);
   });
 };
 
 const setEventListeners = (formElement, config) =>{
   const inputList = Array.from(formElement.querySelectorAll(config.inputSelector));
   const buttonElement = formElement.querySelector(config.submitButtonSelector);
+  toggleButtonState(inputList, buttonElement, config);
 
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
