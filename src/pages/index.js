@@ -1,3 +1,6 @@
+import { enableValidation,validationConfig } from "../scripts/validation";
+import "./index.css";
+
 const initialCards = [
   {
     name: "Mountain house",
@@ -131,7 +134,7 @@ editProfileButton.addEventListener("click", () => {
   openModal(editProfileModal);
   editNameInput.value = profileName.textContent;
   editDescriptionInput.value = profileDescription.textContent;
-  resetValidation(editFormElement,[editNameInput,editDescriptionInput],settings);
+  resetValidation(editFormElement,[editNameInput,editDescriptionInput],validationConfig);
 });
 
 editClosebutton.addEventListener("click", () =>{
@@ -170,3 +173,5 @@ modalList.forEach((eachModal)=> {
     }
   });
 });
+
+enableValidation(validationConfig);
